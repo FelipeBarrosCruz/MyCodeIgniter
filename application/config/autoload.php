@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('DatabaseActiveRecord', 'database', 'session', 'encrypt');
+$autoload['libraries'] = array('DatabaseActiveRecord', 'database', 'session', 'encrypt', 'form_validation');
 
 
 /*

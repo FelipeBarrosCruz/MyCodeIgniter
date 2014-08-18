@@ -6,6 +6,12 @@
 			<p></p>
 			<div class="row">
 				<?php if(!isset($msg_success)): ?>
+
+				<?php if(isset($msg_error)): ?>
+				<div class="error">
+					<?=$msg_error;?>	
+				</div>
+				<?php endif; ?>
 				<form role="form" action="<?=site_url('/home/login')?>" method="post">
 				  
 				  <div class="form-group">

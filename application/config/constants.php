@@ -43,6 +43,7 @@ define('APP_LAYOUT_PATH', 'layouts');
 define('APP_MODULE_PATH', 'modules');
 define('DEFAULT_APP_HEADER', 'header.php');
 define('DEFAULT_APP_FOOTER', 'footer.php');
+define('VALIDATION_FOLDER', APPPATH . 'validations/');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

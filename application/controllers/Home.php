@@ -36,9 +36,12 @@ final class Home extends MainController {
 
 	public function login() {
 		
+		$this->setSubTitle('Login');
+
 		if($data = $this->input->post()) {
 			
-			if(isset($data['login'], $data['password'])) {
+			if($this->form_validation->run('home/login')) {
+
 				$username = $data['login'];
 				$password = $this->encrypt->sha1($data['password']);
 
@@ -46,6 +49,10 @@ final class Home extends MainController {
 					$this->data['msg_success'] = 'Login OK';
 
 				}
+			}
+			else
+			{
+				$this->data['msg_error'] = validation_errors();
 			}
 		}
 	}
